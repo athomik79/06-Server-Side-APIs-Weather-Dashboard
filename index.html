@@ -8,31 +8,40 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-<header class="header bg-dark text-center font-weight-bold"><h2 class="py-4 text-light">Weather Dashboard</h2></header>
-
-<div class="flex-container">
-    <div class="row">
-        <div class="col-3 justify-content-center">
-            <h5 class="justify-content-center pt-2 pl-3">Search by city: </h5>
-                <form class="form-inline my-2 my-lg-0 mt-3 ml-3">
-                    <input class="form-control mr-sm-2 float-left" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary my-2 my-sm-0 float-right" type="submit">Search</button>
-                </form>
-        </div>
-        <div class="col-9"> 
-            <div class="jumbotron">
-                <div class="container">
-                    <h1 class="display-3">Fluid jumbotron</h1>
-                    <p class="lead">This area will display content.</p>
+   
+    <div class="container-fluid text-center text-light bg-dark">
+        <h1  class="text-white pt-3 pb-3">Weather Dashboard</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="card bg-light text-dark">
+                            <h2 class="card-title">Place Holder</h2>
+                            <p id="temp" class="card-text">Place Holder</p>
+                            <p id="hum"class="card-text">Place Holder</p>
+                            <p id="wind"class="card-text">Place Holder</p>
+                            <p id="UV"class="card-text">Place Holder</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 8rem; max-height: 11rem;">
+                            <h5 class="card-title">Primary card title</h5>
+                        <div class="card-body">
+                            <p class="card-text">Wayfarers fixie cardigan, asymmetrical activated charcoal literally cornhole raclette godard. Cliche succulents artisan craft beer iPhone kitsch.</p>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html> 

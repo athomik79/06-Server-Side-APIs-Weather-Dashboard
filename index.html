@@ -12,30 +12,62 @@
 </head>
 <body>
    
-    <div class="container-fluid text-center text-light bg-dark">
-        <h1  class="text-white pt-3 pb-3">Weather Dashboard</h1>
-    </div>
-    <div class="container">
+<header class="container-fluid text-center text-light bg-dark">
+    <h1  class="text-white pt-3 pb-3">Weather Dashboard</h1>
+</header>
+        <div class="container">
+            <div class="clearfix">
+                <div class="col-4 float left">
+                    <nav class="navbar navbar-light bg-light p-3 mb-5 bg-white rounded">
+                        <h4>Search for a City:</h4>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="col-8 float-right">
+                <div class="card bg-light text-dark">
+                    <h2 id="city-name" class="card-title">Place Holder</h2>
+                    <br>
+                    <p id="temp" class="card-text">Place Holder</p>
+                    <p id="hum"class="card-text">Place Holder</p>
+                    <p id="wind"class="card-text">Place Holder</p>
+                    <p id="UV"class="card-text">Place Holder</p>
+                </div>
+            <br>
+            <h2>5-Day Forcast:</h2>
         <div class="row">
-            <div class="col-4">
-                <div class="col-8">
-                    <div class="row">
-                        <div class="card bg-light text-dark">
-                            <h2 class="card-title">Place Holder</h2>
-                            <p id="temp" class="card-text">Place Holder</p>
-                            <p id="hum"class="card-text">Place Holder</p>
-                            <p id="wind"class="card-text">Place Holder</p>
-                            <p id="UV"class="card-text">Place Holder</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="card text-white bg-primary mb-3" style="max-width: 8rem; max-height: 11rem;">
-                            <h5 class="card-title">Primary card title</h5>
-                        <div class="card-body">
-                            <p class="card-text">Wayfarers fixie cardigan, asymmetrical activated charcoal literally cornhole raclette godard. Cliche succulents artisan craft beer iPhone kitsch.</p>
-                        </div>
-                        </div>
-                    </div>
+            <div class="card text-white bg-primary mx-auto" style="width: 8.5rem; height: 11rem;">
+                    <h5 class="card-title">Date</h5>
+                <div class="card-body">
+                    <p class="card-text">Temp<p>Humidity</p>
+                </div>
+            </div>
+            <div class="card text-white bg-primary mx-auto" style="width: 8.5rem; height: 11rem;">
+                    <h5 class="card-title">Date</h5>
+                <div class="card-body">
+                    <p class="card-text">Temp<p>Humidity</p>
+                </div>
+            </div>
+            <div class="card text-white bg-primary mx-auto" style="width: 8.5rem; height: 11rem;">
+                    <h5 class="card-title">Date</h5>
+                <div class="card-body">
+                    <p class="card-text">Temp<p>Humidity</p>
+                </div>
+            </div>
+            <div class="card text-white bg-primary mx-auto" style="width: 8.5rem; height: 11rem;">
+                    <h5 class="card-title">Date</h5>
+                <div class="card-body">
+                    <p class="card-text">Temp<p>Humidity</p>
+                </div>
+            </div>
+            <div class="card text-white bg-primary mx-auto" style="width: 8.5rem; height: 11rem;">
+                    <h5 class="card-title">Date</h5>
+                <div class="card-body">
+                    <p class="card-text">Temp<p>Humidity</p>
                 </div>
             </div>
         </div>

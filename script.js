@@ -1,5 +1,4 @@
 // Current city weather search function
-
 function searchCity(cityname) {
 
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&units=imperial&appid=785f12a440a00e93dd6c2b0cfa40dc38";
@@ -13,8 +12,6 @@ function searchCity(cityname) {
         console.log(queryURL);
         // Empty divs and ids to dump info
         $("#current").empty();
- 
-
         
         // Create HTML for city info
         var cityNameEl = $("<h2>").text(response.name);
@@ -67,8 +64,6 @@ function searchCity(cityname) {
 }
 
 // Event handler city search
-
-
 $("#select-city").on("click", function (event) {
     // Prevent button from submitting
     event.preventDefault();
@@ -77,9 +72,20 @@ $("#select-city").on("click", function (event) {
 
     // Save to local storage
     var textContent = $(this).siblings("input").val();
-    localStorage.setItem(cityInput, textContent);
+    var storearr = [];
+    storearr.push(textContent);
+    localStorage.setItem('cityName', JSON.stringify(storearr));
 
     // City search function 
     searchCity(cityInput);
-
+    pageLoad();
 });
+
+function pageLoad () {
+    var lastSearch = JSON.parse(localStorage.getItem("cityName"));
+    var searchDiv = $("<div>");
+    var psearch = $("<p class='text-muted border'>").text(lastSearch);
+    searchDiv.append(psearch)
+    $("#searchhistory").prepend(searchDiv);
+}
+pageLoad();

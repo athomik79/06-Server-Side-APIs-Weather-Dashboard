@@ -66,7 +66,6 @@ function searchCity(cityname) {
 
 }
 
-
 // Event handler city search
 
 
